@@ -1,8 +1,8 @@
 # jacobmorgan.space 🚀
 ![Stars](https://img.shields.io/github/stars/Bookworm2012/jacobmorgan)
-![HTML5](https://shields.io)
-![CSS3](https://shields.io)
-![JavaScript](https://shields.io)
+![HTML5](https://img.shields.io/badge/HTML-5.2-#E34C26)
+![CSS3](https://img.shields.io/badge/CSS-Snapshot_2026-#663399)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2026-#F7DF1E)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Repo Size](https://img.shields.io/github/repo-size/Bookworm2012/jacobmorgan)
 ![Last Commit](https://img.shields.io/github/last-commit/Bookworm2012/jacobmorgan)
