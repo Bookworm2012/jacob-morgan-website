@@ -1,9 +1,12 @@
 # jacobmorgan.space 🚀
-![Stars](https://img.shields.io/github/stars/Bookworm2012/Kyros-RPG)
+![Stars](https://img.shields.io/github/stars/Bookworm2012/jacobmorgan)
+![HTML5](https://shields.io)
+![CSS3](https://shields.io)
+![JavaScript](https://shields.io)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Repo Size](https://img.shields.io/github/repo-size/Bookworm2012/Kyros-RPG)
-![Last Commit](https://img.shields.io/github/last-commit/Bookworm2012/Kyros-RPG)
-![License](https://img.shields.io/github/license/Bookworm2012/Kyros-RPG)
+![Repo Size](https://img.shields.io/github/repo-size/Bookworm2012/jacobmorgan)
+![Last Commit](https://img.shields.io/github/last-commit/Bookworm2012/jacobmorgan)
+![License](https://img.shields.io/github/license/Bookworm2012/jacobmorgan)
 
 Welcome to the source code repository for my personal digital hub. This website serves as a live portfolio, a tracker for my academic milestones, and a home for my technical logs.
 
