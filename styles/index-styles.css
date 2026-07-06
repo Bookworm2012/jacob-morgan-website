@@ -2,6 +2,10 @@ h1 {
     color: navy;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 .nav-button {
     display: inline-block;
     padding: 8px 16px;
@@ -15,3 +19,4 @@ h1 {
 .nav-button:hover {
     background-color: #0099ff; 
 }
+
