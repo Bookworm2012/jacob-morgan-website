@@ -20,8 +20,12 @@
     </nav>
 
     <footer>
-        <!--&#169; is the copyright symbol.-->
-        <p>&#169; 2026 Jacob Morgan. All Rights Reserved.</p>
+        <!--&#169; is the copyright symbol, &#8212; is the em dash.-->
+        <p>&#169; 2026 &#8212; <span id="year"></span> Jacob Morgan. All Rights Reserved.</p>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 
