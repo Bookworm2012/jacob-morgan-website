@@ -21,10 +21,13 @@
 
     <footer>
         <!--&#169; is the copyright symbol, &#8212; is the em dash.-->
-        <p>&#169; 2026 &#8212; <span id="year"></span> Jacob Morgan. All Rights Reserved.</p>
+        <p>&#169; 2026 <span id="year"></span> Jacob Morgan. All Rights Reserved.</p>
 
         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+            let currentYear = new Date().getFullYear();
+            if (currentYear > 2026) {
+                document.getElementById("year").textContent =  "&#8212;" + currentYear;
+            }
         </script>
     </footer>
 </body>

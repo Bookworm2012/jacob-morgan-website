@@ -6,7 +6,11 @@
         <title>IT Fundamentals</title>
     </head>
     <body>
-        <h1>Welcome to IT Fundamentals!</h1>
+        <header>
+            <h1>Welcome to IT Fundamentals!</h1>
+            <h2>This page chronicles my progress through the course IT Fundamentals</h2>
+        </header>
+        
         <hr>
         <p>See the <a href="../index.html" class="nav-button">Home Page</a> for more info on other classes and projects.</p>
         <main>
@@ -17,6 +21,29 @@
                 of unit 6. 6.11 will be completed tomorrow, as the free response questions for the unit 
                 must be completed to receive a grade for the unit.
             </p>
+            <hr>
+            <p>07/08/2026<br>Today, I completed the final writing assignment 6.11, a free response covering the entirety of unit 6. I also 
+                completed part 3 of my final project for the class. 6.11 was about malware. In it I researched and wrote about MitM attacks, as well as zero-day
+                attacks. In part 3 of the project, I answered questions about how I would protect my device, both its hardware and software.
+            </p>
+            <hr>
+            <p>07/11/2026<br>Today, I completed 7.1, .2, .3, and 7.4. 7.1 was the vocabulary terms for unit 7, 7.2 was about 
+                how technology and software can solve problems. I learned about troubleshooting and the development process. 7.3 was where I learned about 
+                documentation tools, including Figma, GitHub, and Storybook, as well as how to read a Flowchart. 7.4 was where I learned about some routine 
+                hardware and software problems.
+            </p>
+            <hr>
         </main>
+        <footer>
+            <!--&#169; is the copyright symbol, &#8212; is the em dash.-->
+            <p>&#169; 2026 <span id="year"></span> Jacob Morgan. All Rights Reserved.</p>
+
+            <script>
+                let currentYear = new Date().getFullYear();
+                if (currentYear > 2026) {
+                    document.getElementById("year").textContent =  "&#8212;" + currentYear;
+                }
+            </script>
+        </footer>
     </body>
 </html>
