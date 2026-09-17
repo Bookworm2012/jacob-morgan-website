@@ -18,14 +18,15 @@
     <nav>
         <a href="pages/school_home.html" class="nav-button">Visit my School Homepage</a>
     </nav>
-    
+    <p><span id="post"></span></p>
     <script>
-        let name = propmt("Please enter your username")
+        let name = prompt("Please enter your username")
         let password = prompt("Please enter your password")
         if (name == "Jacob" && password == "1234") {
-            let post = prompt("Please make a post")
-            let posted = new Date()
-            document.getElementById("post").textContent = date + <br> + post;
+            let post = prompt("Please make a post");
+            let posted = new Date();
+            let full_post = `${posted}<br>${post}`;
+            document.getElementById("post").innerHTML = full_post
         }
     </script>
     <footer>
@@ -39,6 +40,6 @@
             }
         </script>
     </footer>
-</body
+</body>
 
 </html>
