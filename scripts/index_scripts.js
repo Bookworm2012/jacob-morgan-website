@@ -35,6 +35,11 @@ function saveAndDisplay() {
                 displayStoredItems();
                 inputField.value = '';
             }
+            
+function displayFooter() {
+            let currentYear = new Date().getFullYear();
+            if (currentYear > 2026) {
+                document.getElementById("year").textContent = "—" + currentYear;
+            }
 
-
-
+}
