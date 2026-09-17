@@ -19,21 +19,63 @@
         <a href="pages/school_home.html" class="nav-button">Visit my School Homepage</a>
     </nav>
     <p><span id="post"></span></p>
+    
+            <!-- Input field and submit button -->
+    <input type="text" id="userInput" placeholder="Enter something here...">
+    <button onclick="saveAndDisplay()">Add</button>
+
+    <!-- Container where the lines will be displayed -->
+    <div id="listContainer"></div>
+
     <script>
+        <script>
         let name = prompt("Please enter your username")
         let password = prompt("Please enter your password")
         if (name == "Jacob" && password == "1234") {
-            let post = prompt("Please make a post");
-            let posted = new Date();
-            const formattedDate = posted.toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "2-digit",
-              day: "2-digit"
-              });
-            let full_post = `${formattedDate}<br>${post}`;
-            document.getElementById("post").innerHTML = full_post
+                
+            // 1. Load existing items from localStorage when the page opens
+            window.onload = function() {
+                displayStoredItems();
+            };
+
+            function saveAndDisplay() {
+                const inputField = document.getElementById('userInput');
+                const newValue = inputField.value.trim();
+
+                if (newValue === '') return; // Don't add empty lines
+
+                // 2. Get existing items or initialize an empty array
+                let storedItems = JSON.parse(localStorage.getItem('myLines')) || [];
+
+                // 3. Add the new value to the FRONT of the array (so new is on top)
+                storedItems.unshift(newValue);
+
+                // 4. Save the updated array back to localStorage
+                localStorage.setItem('myLines', JSON.stringify(storedItems));
+
+                // 5. Refresh the display and clear the input box
+                displayStoredItems();
+                inputField.value = '';
+            }
+
+            function displayStoredItems() {
+                const container = document.getElementById('listContainer');
+                let storedItems = JSON.parse(localStorage.getItem('myLines')) || [];
+
+                // Clear the current display to prevent duplicates
+                container.innerHTML = '';
+
+                // 6. Loop through and create HTML elements for each item
+                storedItems.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'list-item';
+                    div.textContent = item;
+                    container.appendChild(div);
+                });
+            }
+        </script>
+
         }
-    </script>
     <footer>
         <!--&#169; is the copyright symbol, &#8212; is the em dash.-->
         <p>&#169; 2026 <span id="year"></span> Jacob Morgan. All Rights Reserved.</p>
